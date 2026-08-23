@@ -12,7 +12,6 @@ final class RolesPermissionsLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'roles-permissions-livewire');
-        Livewire\Livewire::component('roles-permissions-livewire-overview', Liberu\Foundation\RolesPermissionsLivewire\Livewire\Overview::class);
+        Livewire::component('roles-permissions-livewire-overview', Liberu\Foundation\RolesPermissionsLivewire\Livewire\Overview::class);
     }
 }
-
